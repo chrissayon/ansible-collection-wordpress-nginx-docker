@@ -1,0 +1,5 @@
+---
+- name: Pull Wordpress image
+  docker_image:
+    name: wordpress:latest
+    source: pull

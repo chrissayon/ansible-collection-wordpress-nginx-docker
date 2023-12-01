@@ -1,0 +1,7 @@
+---
+- hosts: all
+  collections: 
+  - chrissayon.wordpress_docker
+  
+  roles:
+  - geerlingguy.docker
