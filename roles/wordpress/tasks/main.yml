@@ -18,6 +18,4 @@
       WORDPRESS_DB_PASSWORD: "{{ db_password }}"
     volumes:
       - "{{ docker_base_volume_path }}/wordpress:/var/www/html"
-    ports:
-     - "80:80"
     restart: true
