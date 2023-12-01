@@ -5,3 +5,6 @@
   
   roles:
   - geerlingguy.docker
+  - chrissayon.wordpress_docker.network
+  - chrissayon.wordpress_docker.mysql
+  - chrissayon.wordpress_docker.wordpress

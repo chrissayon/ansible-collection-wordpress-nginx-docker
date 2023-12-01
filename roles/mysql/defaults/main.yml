@@ -1,0 +1,6 @@
+---
+docker_network_name: wordpress_network
+db_name: wordpress_database
+db_user: wordpress_user
+db_password: wordpress_password
+db_root_password: wordpress_rootpassword
