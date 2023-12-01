@@ -1,1 +1,3 @@
-# ansible-collection-wordpress-nginx-docker
+# Ansible Collection - chrissayon.wordpress_docker
+
+Documentation for the collection.

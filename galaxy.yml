@@ -1,0 +1,28 @@
+---
+namespace: chrissayon
+name: wordpress-docker
+version: "1.0.0"
+readme: README.md
+
+authors:
+  - chrissayon
+
+description: Dockerized deployment of wordpress, nginx, mysql inside docker
+
+license:
+  - MIT
+
+tags:
+  - wordpress
+  - nginx
+  - mysql
+  - docker
+
+dependencies: {}
+
+repository: https://github.com/chrissayon/ansible-collection-wordpress-nginx-docker
+documentation: https://github.com/chrissayon/ansible-collection-wordpress-nginx-docker
+homepage: https://github.com/chrissayon/ansible-collection-wordpress-nginx-docker
+issues: https://github.com/chrissayon/ansible-collection-wordpress-nginx-docker/issues
+
+build_ignore: []
