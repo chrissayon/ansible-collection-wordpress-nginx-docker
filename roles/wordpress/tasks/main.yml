@@ -10,12 +10,14 @@
     image: wordpress
     networks:
       - name: "{{ docker_network_name }}"
-    hostname: wordpress
+    hostname: "{{ docker_wordpress_hostname }}"
     env:
-      WORDPRESS_DB_HOST: "{{ db_host }}"
+      WORDPRESS_DB_HOST: "{{ docker_mysql_hostname }}"
       WORDPRESS_DB_NAME: "{{ db_name }}"
       WORDPRESS_DB_USER: "{{ db_user }}"
       WORDPRESS_DB_PASSWORD: "{{ db_password }}"
     volumes:
       - "{{ docker_base_volume_path }}/wordpress:/var/www/html"
+    ports:
+     - "80:80"
     restart: true

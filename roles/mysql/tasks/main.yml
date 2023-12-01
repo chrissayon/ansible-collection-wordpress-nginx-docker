@@ -10,7 +10,7 @@
     image: mysql
     networks:
       - name: "{{ docker_network_name }}"
-    hostname: mysql
+    hostname: "{{ docker_mysql_hostname }}"
     env:
       MYSQL_DATABASE: "{{ db_name }}"
       MYSQL_USER: "{{ db_user }}"

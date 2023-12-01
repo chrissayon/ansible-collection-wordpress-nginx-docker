@@ -1,5 +1,7 @@
 ---
 docker_network_name: wordpress_network
+docker_mysql_hostname: mysql_host
+
 db_name: wordpress_database
 db_user: wordpress_user
 db_password: wordpress_password

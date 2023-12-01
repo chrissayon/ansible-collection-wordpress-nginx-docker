@@ -1,8 +1,9 @@
 ---
 docker_network_name: wordpress_network
 docker_base_volume_path: /home/wordpress_docker
+docker_wordpress_hostname: wordpress_host
 
-db_host: mysql
+docker_mysql_hostname: mysql_host
 db_name: wordpress_database
 db_user: wordpress_user
 db_password: wordpress_password
