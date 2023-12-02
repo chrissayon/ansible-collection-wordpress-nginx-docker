@@ -1,7 +1,7 @@
 ---
 - name: Pull Wordpress image
   docker_image:
-    name: wordpress:latest
+    name: "wordpress:{{ wordpress_docker_tag }}"
     source: pull
 
 - name: Create container with Wordpress image

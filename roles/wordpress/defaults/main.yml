@@ -1,4 +1,5 @@
 ---
+wordpress_docker_tag: latest
 docker_network_name: wordpress_network
 docker_base_volume_path: /home/wordpress_docker
 docker_wordpress_hostname: wordpress_host

@@ -1,4 +1,5 @@
 ---
+mysql_docker_tag: latest
 docker_network_name: wordpress_network
 docker_mysql_hostname: mysql_host
 

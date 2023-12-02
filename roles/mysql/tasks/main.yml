@@ -1,7 +1,7 @@
 ---
 - name: Pull mysql image
   docker_image:
-    name: mysql:latest
+    name: "mysql:{{ mysql_docker_tag }}"
     source: pull
 
 - name: Create container with mysql image
