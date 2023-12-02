@@ -1,0 +1,15 @@
+---
+- name: Start Nginx Container (HTTP)
+  docker_container:
+    name: nginx
+    image: nginx
+    ports:
+      - "80:80"
+    networks:
+      - name: "{{ docker_network_name }}"
+    hostname: "{{ docker_nginx_hostname }}"
+    volumes:
+      - "{{ docker_base_volume_path }}/wordpress:/var/www/html"
+      - "{{ docker_base_volume_path }}/nginx/conf:/etc/nginx/conf.d"
+      - "{{ docker_base_volume_path }}/nginx/logs:/var/log/nginx"
+    restart: true

@@ -6,3 +6,5 @@ docker_base_volume_path: /home/wordpress_docker
 docker_network_name: wordpress_network
 
 nginx_server_name: default_server
+
+ssl: false
