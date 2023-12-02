@@ -1,0 +1,31 @@
+---
+name: Publish Collection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  builddeploy:
+    name: Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install Ansible.
+        run: pip3 install ansible-core
+
+      - name: Build Ansible tar
+        run: >-
+          ansible-galaxy collection build
+
+      # TODO: Add versioning
+      - name: Publish the collection on Galaxy
+        run: >-
+          ansible-galaxy collection publish --api-key ${{ secrets.GALAXY_API_KEY }} chrissayon-wordpress_docker-{VERSION}.tar.gz
