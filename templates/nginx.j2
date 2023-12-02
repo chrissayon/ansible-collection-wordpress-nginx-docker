@@ -3,6 +3,9 @@ server {
     listen [::]:80;
     server_name {{ nginx_server_name }};
 
+    root   /var/www/html;
+    index  index.php;
+
     location / {
         proxy_pass http://{{ docker_wordpress_hostname }}:80;
         proxy_set_header Host $host;

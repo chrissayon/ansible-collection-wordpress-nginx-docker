@@ -1,7 +1,7 @@
 ---
 namespace: chrissayon
 name: wordpress_docker
-version: "1.0.1"
+version: "1.0.2"
 readme: README.md
 
 authors:
@@ -28,3 +28,4 @@ issues: https://github.com/chrissayon/ansible_collection_wordpress_nginx_docker/
 
 build_ignore:
   - "*.tar.gz"
+  - ".github"
