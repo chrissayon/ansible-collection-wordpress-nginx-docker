@@ -21,10 +21,10 @@ tags:
 dependencies:
   community.docker: "3.4.11"
 
-repository: https://github.com/chrissayon/ansible_collection_wordpress_nginx_docker
-documentation: https://github.com/chrissayon/ansible_collection_wordpress_nginx_docker
-homepage: https://github.com/chrissayon/ansible_collection_wordpress_nginx_docker
-issues: https://github.com/chrissayon/ansible_collection_wordpress_nginx_docker/issues
+repository: https://github.com/chrissayon/ansible-collection-wordpress-nginx-docker
+documentation: https://github.com/chrissayon/ansible-collection-wordpress-nginx-docker
+homepage: https://github.com/chrissayon/ansible-collection-wordpress-nginx-docker
+issues: https://github.com/chrissayon/ansible-collection-wordpress-nginx-docker/issues
 
 build_ignore:
   - "*.tar.gz"
